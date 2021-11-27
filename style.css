@@ -15,8 +15,43 @@ h6 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 ul {
   list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+header img {
+  width: 210px;
+}
+
+footer {
+  background: #333333;
+  width: 100%;
+  padding: 20px;
+}
+footer h4 {
+  font-size: 1.5em;
+}
+footer div {
+  margin: 20px 0;
+}
+footer a {
+  display: flex;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+footer a i {
+  margin-right: 15px;
 }
 
 /*** Les couleurs du site ***/

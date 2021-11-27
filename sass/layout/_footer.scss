@@ -1,0 +1,23 @@
+footer {
+    background: #333333;
+    width: 100%;
+    padding: 20px;
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    div {
+        margin: 20px 0;
+    }
+
+    a {
+        display: flex;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+    
+    a i {
+        margin-right: 15px;
+    }
+}
