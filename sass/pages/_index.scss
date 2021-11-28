@@ -1,0 +1,145 @@
+.container__index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search__location {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #e2e2e2;
+        padding: 10px 0 10px 0;
+
+        i {
+            padding-right: 10px;
+        }
+
+        input {
+            border-style: none;
+            border: 0px;
+            background-color: #e2e2e2;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            width: 155px;
+        }
+    }
+
+    .search__reserved {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 15% 30px 15%;
+        background-color: #f2f2f2;
+
+        h1, p {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .function {
+        padding: 15px;
+        margin: 20px 0 20px 0;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+            height: 60px;
+            background-color: #f2f2f2;
+            box-shadow: #bbbaba 0 5px 10px;
+            border-radius: 20px;
+
+            span {
+                margin-right: 20px;
+                background-color: #9356DC;
+                color: whitesmoke;
+                padding: 5px 8px 5px 8px;
+                border-radius: 25px;
+            }
+
+            i, p {
+                display: flex;
+                padding: 20px 10px;
+            }
+
+            .icon-function {
+                font-size: 20px;
+                color: grey;
+            }
+        }
+    }
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: #f2f2f2;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        &__card {
+            background-color: #fff;
+            box-shadow: #bbbaba 0 5px 10px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            height: 300px;
+
+            span {
+                position: absolute;
+                bottom: 70px;
+                right: 35px;
+            }
+
+            img {
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+                width: 100%;
+                height: 70%;
+            }
+        }
+
+        &__card--flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            .icon-heart {
+                font-size: 25px;
+            }
+        }
+    }
+}
