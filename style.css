@@ -184,6 +184,49 @@ footer a i {
   font-size: 25px;
 }
 
+.container__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container__menu img {
+  object-fit: cover;
+  width: 100%;
+}
+.container__menu .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 0 25px;
+}
+.container__menu .title .icon-heart {
+  font-size: 25px;
+}
+.container__menu .menu {
+  padding: 25px;
+  background-color: #f2f2f2;
+}
+.container__menu .menu__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.container__menu .menu__title .icon-heart {
+  font-size: 25px;
+}
+.container__menu .menu h2 {
+  padding-bottom: 20px;
+}
+.container__menu .menu__choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*** Les couleurs du site ***/
 
 /*# sourceMappingURL=style.css.map */

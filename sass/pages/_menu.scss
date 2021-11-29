@@ -1,0 +1,50 @@
+.container__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px 0 25px;
+
+        .icon-heart {
+            font-size: 25px;
+        }
+    }
+
+    .menu {
+        padding: 25px;
+        background-color: #f2f2f2;
+
+        &__title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 25px;
+    
+            .icon-heart {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        &__choice {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
