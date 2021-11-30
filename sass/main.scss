@@ -1,3 +1,6 @@
+@import "./utils/_mixins";
+@import "./utils/_variables";
+
 @import "./base/_reset";
 @import "./base/_typography";
 
@@ -5,9 +8,6 @@
 
 @import "./layout/_header";
 @import "./layout/_footer";
+@import "./layout/_menu";
 
-@import "./_index";
-@import "./pages/_menu";
-
-@import "./utils/_mixins";
-@import "./utils/_variables";
+@import "./pages/_index";
