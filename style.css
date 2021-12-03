@@ -99,6 +99,12 @@ footer h4 {
 footer div {
   margin: 20px 0;
 }
+@media screen and (min-width: 701px) {
+  footer div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 footer a {
   display: flex;
   color: whitesmoke;
@@ -217,7 +223,7 @@ footer a i {
   margin-bottom: 15px;
 }
 .container__index .function {
-  padding: 15px;
+  padding: 25px;
   margin: 20px 0 20px 0;
   background-color: #fff;
 }
@@ -227,6 +233,12 @@ footer a i {
 .container__index .function ul {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 701px) {
+  .container__index .function ul {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .container__index .function li {
   display: flex;
@@ -239,6 +251,16 @@ footer a i {
   background-color: #f2f2f2;
   box-shadow: #bbbaba 0 5px 10px;
   border-radius: 20px;
+}
+@media screen and (min-width: 701px) {
+  .container__index .function li {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__index .function li {
+    margin: 2%;
+  }
 }
 .container__index .function li span {
   background-color: #9356DC;
@@ -265,12 +287,34 @@ footer a i {
 .container__index .restaurant h2 {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 701px) {
+  .container__index .restaurant__position--figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__index .restaurant__position--figure {
+    display: flex;
+  }
+}
 .container__index .restaurant__card {
   background-color: #fff;
   box-shadow: #bbbaba 0 5px 10px;
   margin-bottom: 25px;
   border-radius: 15px;
   height: 300px;
+}
+@media screen and (min-width: 701px) {
+  .container__index .restaurant__card {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__index .restaurant__card {
+    width: 24%;
+  }
 }
 .container__index .restaurant__card span {
   background-color: #99E2D0;

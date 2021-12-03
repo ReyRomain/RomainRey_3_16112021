@@ -48,7 +48,7 @@
     }
 
     .function {
-        padding: 15px;
+        padding: 25px;
         margin: 20px 0 20px 0;
         background-color: #fff;
 
@@ -59,6 +59,11 @@
         ul {
             display: flex;
             flex-direction: column;
+
+            @include tablette {
+                display: flex;
+                flex-direction: row;
+            }
         }
 
         li {
@@ -72,6 +77,14 @@
             background-color: #f2f2f2;
             box-shadow: #bbbaba 0 5px 10px;
             border-radius: 20px;
+
+            @include tablette {
+                margin: 10px;
+            }
+
+            @include desktop {
+                margin: 2%;
+            }
 
             span {
                 background-color: $color-primary;
@@ -104,12 +117,33 @@
             margin-bottom: 20px;
         }
 
+        &__position--figure {
+
+            @include tablette {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            @include desktop {
+                display: flex;
+            }
+        }
+
         &__card {
             background-color: #fff;
             box-shadow: #bbbaba 0 5px 10px;
             margin-bottom: 25px;
             border-radius: 15px;
             height: 300px;
+
+            @include tablette {
+                width: 49%;
+            }
+
+            @include desktop {
+                width: 24%;
+            }
 
             span {
                 background-color: #99E2D0;

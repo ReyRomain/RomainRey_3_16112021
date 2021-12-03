@@ -8,6 +8,11 @@ footer {
 
     div {
         margin: 20px 0;
+
+        @include tablette {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     a {

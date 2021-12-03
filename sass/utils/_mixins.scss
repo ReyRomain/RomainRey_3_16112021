@@ -1,0 +1,19 @@
+/*** Responsive - MediaQueries ***/
+
+@mixin phone-L {
+    @media screen and (min-width: 521px) and (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media screen and (min-width: 701px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
