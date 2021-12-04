@@ -54,6 +54,10 @@
 
         h2 {
             margin-bottom: 20px;
+
+            @include tablette {
+                text-align: center;
+            }
         }
 
         ul {
@@ -105,6 +109,14 @@
                 color: grey;
             }
         }
+
+        li:hover {
+            background-color: #e9d9ff;
+
+            i {
+                color: $color-primary;
+            }
+        }
     }
 
     .restaurant {
@@ -115,6 +127,10 @@
 
         h2 {
             margin-bottom: 20px;
+
+            @include tablette {
+                text-align: center;
+            }
         }
 
         &__position--figure {
@@ -136,6 +152,12 @@
             margin-bottom: 25px;
             border-radius: 15px;
             height: 300px;
+            transform: scale(1);
+            transition: transform 400ms;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
 
             @include tablette {
                 width: 49%;
@@ -171,6 +193,8 @@
 
             .icon-heart {
                 font-size: 25px;
+
+                @include icon-anime;
             }
         }
     }
