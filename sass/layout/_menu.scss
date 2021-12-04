@@ -43,11 +43,17 @@
     
             .icon-heart {
                 font-size: 25px;
+
+                @include icon-anime;
             }
         }
 
         h2 {
-            padding-bottom: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #99e2d0;
+            width: 40px;
+            font-weight: normal;
         }
 
         &__choice {

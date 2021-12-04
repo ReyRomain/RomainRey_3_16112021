@@ -181,9 +181,25 @@ footer a i {
 }
 .container__menu .menu__title .icon-heart {
   font-size: 25px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.container__menu .menu__title .icon-heart:hover {
+  transform: scale(1.15);
+  /*color: $color-secondary;*/
+  font-weight: 900;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fill-heart 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .container__menu .menu h2 {
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+  font-weight: normal;
 }
 .container__menu .menu__choice {
   display: flex;
@@ -370,7 +386,8 @@ footer a i {
   color: #5f867c;
   font-weight: bold;
   position: absolute;
-  margin: 15px;
+  top: 10px;
+  right: 20px;
 }
 .container__index .restaurant__card img {
   object-fit: cover;
@@ -390,8 +407,8 @@ footer a i {
   transition: transform 400ms;
 }
 .container__index .restaurant__card--flex .icon-heart:hover {
-  /*transform: scale(1.15);
-  color: $color-secondary;*/
+  transform: scale(1.15);
+  /*color: $color-secondary;*/
   font-weight: 900;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
