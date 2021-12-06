@@ -1,0 +1,25 @@
+/*** Les animations sur site ***/
+
+/*** L'animation du loader ***/
+
+.load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: loader 4s ease-in forwards;
+
+    &__ohmyfood, &__flex-icon {
+        font-size: 1.85em;
+        font-family: "Shrikhand", sans-serif;
+        color: whitesmoke;
+        text-shadow: black 0 5px 10px;
+    }
+}
