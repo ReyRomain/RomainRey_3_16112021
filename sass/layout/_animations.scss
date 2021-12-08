@@ -14,12 +14,76 @@
     right: 0;
     bottom: 0;
     left: 0;
-    animation: loader 4s ease-in forwards;
+    animation: loader 3s ease-in forwards;
 
     &__ohmyfood, &__flex-icon {
         font-size: 1.85em;
         font-family: "Shrikhand", sans-serif;
         color: whitesmoke;
         text-shadow: black 0 5px 10px;
+    }
+}
+
+@keyframes loader {
+    0% {
+        background-color: $color-primary;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        background-color: linear-gradient($color-primary, $color-secondary);
+        opacity: 1;
+    }
+
+    50% {
+        background-color: $color-secondary;
+        /*opacity: 0.85;*/
+    }
+
+    75% {
+        background-color: linear-gradient($color-secondary, $color-tertiary);
+        /*opacity: 0.75;*/
+    }
+
+    90% {
+        background-color: $color-tertiary;
+        /*opacity: 0.7;*/
+        opacity: 1;
+        transform: scale(1.95);
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/*** Fin du loader ***/
+
+/*** L'animation du coeur ***/
+
+.icon-heart {
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.15);
+        /*color: $color-secondary;*/
+        font-weight: 900;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fill-heart 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@keyframes fill-heart {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

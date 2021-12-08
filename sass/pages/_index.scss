@@ -147,6 +147,7 @@
         }
 
         &__card {
+            position: relative;
             background-color: #fff;
             box-shadow: #bbbaba 0 5px 10px;
             margin-bottom: 25px;
@@ -194,8 +195,6 @@
 
             .icon-heart {
                 font-size: 25px;
-
-                @include icon-anime;
             }
         }
     }
