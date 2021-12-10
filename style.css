@@ -319,6 +319,13 @@ footer a i {
   margin: 20px 0 20px 0;
   background-color: #fff;
 }
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__index .function {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container__index .function h2 {
   margin-bottom: 20px;
 }
@@ -335,6 +342,7 @@ footer a i {
   .container__index .function ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
 .container__index .function li {
@@ -344,14 +352,17 @@ footer a i {
   align-items: center;
   margin-bottom: 15px;
   width: 100%;
+  max-width: 300px;
   height: 60px;
   background-color: #f2f2f2;
   box-shadow: #bbbaba 0 5px 10px;
   border-radius: 20px;
+  cursor: pointer;
 }
 @media screen and (min-width: 701px) {
   .container__index .function li {
     margin: 10px;
+    max-width: 285px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -387,6 +398,11 @@ footer a i {
   padding: 25px;
   background-color: #f2f2f2;
 }
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__index .restaurant {
+    align-items: center;
+  }
+}
 .container__index .restaurant h2 {
   margin-bottom: 20px;
 }
@@ -402,9 +418,15 @@ footer a i {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 840px) and (max-width: 1023px) {
+  .container__index .restaurant__position--figure {
+    margin: 0 6%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .container__index .restaurant__position--figure {
     display: flex;
+    justify-content: space-evenly;
   }
 }
 .container__index .restaurant__card {
@@ -428,6 +450,7 @@ footer a i {
 @media screen and (min-width: 1024px) {
   .container__index .restaurant__card {
     width: 24%;
+    max-width: 300px;
   }
 }
 .container__index .restaurant__card span {
@@ -455,5 +478,7 @@ footer a i {
 .container__index .restaurant__card--flex .icon-heart {
   font-size: 25px;
 }
+
+/*** La responsive pour les desktop-XL ***/
 
 /*# sourceMappingURL=style.css.map */

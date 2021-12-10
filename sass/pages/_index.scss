@@ -52,6 +52,12 @@
         margin: 20px 0 20px 0;
         background-color: #fff;
 
+        @include phone-L {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         h2 {
             margin-bottom: 20px;
 
@@ -67,6 +73,7 @@
             @include tablette {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
             }
         }
 
@@ -77,13 +84,16 @@
             align-items: center;
             margin-bottom: 15px;
             width: 100%;
+            max-width: 300px;
             height: 60px;
             background-color: #f2f2f2;
             box-shadow: #bbbaba 0 5px 10px;
             border-radius: 20px;
+            cursor: pointer;
 
             @include tablette {
                 margin: 10px;
+                max-width: 285px;
             }
 
             @include desktop {
@@ -125,6 +135,10 @@
         padding: 25px;
         background-color: #f2f2f2;
 
+        @include phone-L {
+            align-items: center;
+        }
+
         h2 {
             margin-bottom: 20px;
 
@@ -141,8 +155,13 @@
                 justify-content: space-between;
             }
 
+            @include tablette-L {
+                margin: 0 6%;
+            }
+
             @include desktop {
                 display: flex;
+                justify-content: space-evenly;
             }
         }
 
@@ -166,6 +185,7 @@
 
             @include desktop {
                 width: 24%;
+                max-width: 300px;
             }
 
             span {
@@ -199,3 +219,5 @@
         }
     }
 }
+
+/*** La responsive pour les desktop-XL ***/
