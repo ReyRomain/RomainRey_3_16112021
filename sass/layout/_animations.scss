@@ -87,3 +87,82 @@
         opacity: 1;
     }
 }
+
+/*** Fin animation du coeur ***/
+
+/*** L'animation de check-circle ***/
+
+/*.menu__choice {
+    
+}*/
+
+/*.menu__choice{
+
+    &:hover {
+        .menu__choice--icon {
+            display: flex;
+        }
+    }
+
+    .menu__choice--icon {
+        display: none;
+        width: 30%;
+    }
+}*/
+
+/*** Fin de l'animation check-circle ***/
+
+/*** L'animation d'apparition ***/
+
+.menu {
+    .menu__title {
+        animation: apparition-left 1.5s linear both;
+        
+    }
+
+    .menu__choice {
+        animation: apparition 1.5s linear both;   
+    }
+
+    h2 {
+        animation: apparition-right 2.5s linear both;
+    }
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes apparition-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes apparition-right {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*** Fin de l'animation d'apparition ***/
