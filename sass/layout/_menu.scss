@@ -14,6 +14,10 @@
         flex-direction: column;
         position: relative;
         bottom: 25px;
+
+        @include tablette-L {
+            margin: 0 20%;
+        }
     }
 
     .title {
@@ -52,6 +56,19 @@
             border-bottom: 2px solid #99e2d0;
             width: 40px;
             font-weight: normal;
+
+            @include desktop {
+
+            }
+        }
+
+        @include desktop {
+
+            &__group {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
         }
 
         &__choice {
@@ -64,6 +81,12 @@
             background: #fff;
             border-radius: 20px;
             box-shadow: #bbbaba 0 5px 10px;
+            height: 60px;
+
+            @include desktop {
+                width: 100%;
+                max-width: 400px;
+            }
         }
 
         &__command {

@@ -141,6 +141,11 @@ footer a i {
   position: relative;
   bottom: 25px;
 }
+@media screen and (min-width: 840px) and (max-width: 1023px) {
+  .container__menu .position {
+    margin: 0 20%;
+  }
+}
 .container__menu .title {
   display: flex;
   flex-direction: row;
@@ -174,6 +179,13 @@ footer a i {
   width: 40px;
   font-weight: normal;
 }
+@media screen and (min-width: 1024px) {
+  .container__menu .menu__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .container__menu .menu__choice {
   display: flex;
   flex-direction: row;
@@ -184,6 +196,13 @@ footer a i {
   background: #fff;
   border-radius: 20px;
   box-shadow: #bbbaba 0 5px 10px;
+  height: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .container__menu .menu__choice {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 .container__menu .menu__command {
   display: flex;
@@ -271,6 +290,67 @@ footer a i {
     opacity: 1;
   }
 }
+/*** Fin animation du coeur ***/
+/*** L'animation de check-circle ***/
+/*.menu__choice {
+
+}*/
+/*.menu__choice{
+
+    &:hover {
+        .menu__choice--icon {
+            display: flex;
+        }
+    }
+
+    .menu__choice--icon {
+        display: none;
+        width: 30%;
+    }
+}*/
+/*** Fin de l'animation check-circle ***/
+/*** L'animation d'apparition ***/
+.menu .menu__title {
+  animation: apparition-left 1.5s linear both;
+}
+.menu .menu__choice {
+  animation: apparition 1.5s linear both;
+}
+.menu h2 {
+  animation: apparition-right 2.5s linear both;
+}
+
+@keyframes apparition {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition-right {
+  from {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*** Fin de l'animation d'apparition ***/
 .container__index {
   display: flex;
   flex-direction: column;
@@ -415,7 +495,7 @@ footer a i {
   .container__index .restaurant__position--figure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 840px) and (max-width: 1023px) {

@@ -152,7 +152,7 @@
             @include tablette {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-around;
             }
 
             @include tablette-L {
