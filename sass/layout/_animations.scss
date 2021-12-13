@@ -92,23 +92,97 @@
 
 /*** L'animation de check-circle ***/
 
-/*.menu__choice {
-    
-}*/
+.menu__choice{
 
-/*.menu__choice{
+    .menu__choice--title {
+        flex: 3;
+        padding: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 50%;
+    }
 
-    &:hover {
-        .menu__choice--icon {
-            display: flex;
-        }
+    .menu__choice--price {
+        flex: 0.5;
+        display: flex;
+        font-weight: bold;
+        padding: 31px 20px 20px 10px;
+        width: 20%;
     }
 
     .menu__choice--icon {
         display: none;
+        flex: 0;
         width: 30%;
+        height: 100%;
+        animation: exit-icon 0.5s ease-in-out both;
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            font-size: 28px;
+
+            animation: rotate-icon 0.5s ease-in-out both;
+        }
     }
-}*/
+
+    &:hover {
+        .menu__choice--icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
+            border-radius: 0 15px 15px 0;
+
+            animation: enter-icon 0.5s ease-in-out both;
+        }
+    }
+}
+
+@keyframes enter-icon {
+    
+    0% {
+        flex: 0;
+        background-color: white;
+    }
+
+    65% {
+        flex: 1.5;
+        background-color: $color-tertiary;
+    }
+
+    100% {
+        flex: 1;
+        background-color: $color-tertiary;
+    }
+}
+
+@keyframes exit-icon {
+    
+    0% {
+        flex: 1;
+        background-color: $color-tertiary;
+    }
+
+    100% {
+        flex: 0;
+        background-color: white;
+    }
+}
+
+@keyframes rotate-icon {
+
+    0% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-1turn);
+    }
+}
 
 /*** Fin de l'animation check-circle ***/
 

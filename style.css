@@ -191,17 +191,17 @@ footer a i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   margin-bottom: 15px;
   background: #fff;
   border-radius: 20px;
   box-shadow: #bbbaba 0 5px 10px;
-  height: 60px;
 }
 @media screen and (min-width: 1024px) {
   .container__menu .menu__choice {
     width: 100%;
-    max-width: 400px;
+    max-width: 410px;
+    min-width: 330px;
+    margin-right: 10px;
   }
 }
 .container__menu .menu__command {
@@ -292,22 +292,77 @@ footer a i {
 }
 /*** Fin animation du coeur ***/
 /*** L'animation de check-circle ***/
-/*.menu__choice {
+.menu__choice .menu__choice--title {
+  flex: 3;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
+}
+.menu__choice .menu__choice--price {
+  flex: 0.5;
+  display: flex;
+  font-weight: bold;
+  padding: 31px 20px 20px 10px;
+  width: 20%;
+}
+.menu__choice .menu__choice--icon {
+  display: none;
+  flex: 0;
+  width: 30%;
+  height: 100%;
+  animation: exit-icon 0.5s ease-in-out both;
+}
+.menu__choice .menu__choice--icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 28px;
+  animation: rotate-icon 0.5s ease-in-out both;
+}
+.menu__choice:hover .menu__choice--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  animation: enter-icon 0.5s ease-in-out both;
+}
 
-}*/
-/*.menu__choice{
-
-    &:hover {
-        .menu__choice--icon {
-            display: flex;
-        }
-    }
-
-    .menu__choice--icon {
-        display: none;
-        width: 30%;
-    }
-}*/
+@keyframes enter-icon {
+  0% {
+    flex: 0;
+    background-color: white;
+  }
+  65% {
+    flex: 1.5;
+    background-color: #99E2D0;
+  }
+  100% {
+    flex: 1;
+    background-color: #99E2D0;
+  }
+}
+@keyframes exit-icon {
+  0% {
+    flex: 1;
+    background-color: #99E2D0;
+  }
+  100% {
+    flex: 0;
+    background-color: white;
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
 /*** Fin de l'animation check-circle ***/
 /*** L'animation d'apparition ***/
 .menu .menu__title {

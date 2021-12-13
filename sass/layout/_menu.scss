@@ -76,16 +76,16 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
             margin-bottom: 15px;
             background: #fff;
             border-radius: 20px;
             box-shadow: #bbbaba 0 5px 10px;
-            height: 60px;
 
             @include desktop {
                 width: 100%;
-                max-width: 400px;
+                max-width: 410px;
+                min-width: 330px;
+                margin-right: 10px;
             }
         }
 
