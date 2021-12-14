@@ -559,7 +559,7 @@ footer a i {
   }
 }
 .container__index .restaurant h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 701px) {
   .container__index .restaurant h2 {
@@ -581,7 +581,9 @@ footer a i {
 @media screen and (min-width: 1024px) {
   .container__index .restaurant__position--figure {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1250px) {
@@ -616,8 +618,8 @@ footer a i {
 }
 @media screen and (min-width: 1024px) {
   .container__index .restaurant__card {
-    width: 23%;
     max-width: 390px;
+    margin: 25px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1250px) {

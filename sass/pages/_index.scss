@@ -154,7 +154,7 @@
         }
 
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
 
             @include tablette {
                 text-align: center;
@@ -175,7 +175,9 @@
 
             @include desktop {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: nowrap;
             }
 
             @include special-card {
@@ -208,8 +210,8 @@
             }
 
             @include desktop {
-                width: 23%;
                 max-width: 390px;
+                margin: 25px;
             }
 
             @include special-card {
