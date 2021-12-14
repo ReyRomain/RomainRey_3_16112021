@@ -11,11 +11,11 @@ footer {
     }
 
     div {
-        margin: 20px 0;
+        margin: 50px 0;
 
         @include tablette {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     }
 
