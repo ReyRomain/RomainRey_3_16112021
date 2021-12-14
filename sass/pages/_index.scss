@@ -49,7 +49,7 @@
 
     .function {
         padding: 25px;
-        margin: 20px 0 20px 0;
+        margin: 20px 0 0 0;
         background-color: #fff;
 
         @include phone-L {
@@ -177,6 +177,12 @@
                 display: flex;
                 justify-content: space-evenly;
             }
+
+            @include special-card {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
 
         &__card {
@@ -193,13 +199,23 @@
                 transform: scale(1.05);
             }
 
+            @include phone-L {
+                width: 390px;
+            }
+
             @include tablette {
-                width: 49%;
+                width: 46%;
             }
 
             @include desktop {
-                width: 24%;
-                max-width: 300px;
+                width: 23%;
+                max-width: 390px;
+            }
+
+            @include special-card {
+                width: 45%;
+                max-width: 390px;
+                margin: 2%;
             }
 
             span {

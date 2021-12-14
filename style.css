@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /*** Responsive - MediaQueries ***/
+/*** Mixin responsive spécial pour les restaurant__card ***/
 /*** Les couleurs du site ***/
 html,
 body,
@@ -320,6 +322,7 @@ footer a i {
   align-items: center;
   color: whitesmoke;
   font-size: 28px;
+  padding: 21px;
   animation: rotate-icon 0.5s ease-in-out both;
 }
 .menu__choice:hover .menu__choice--icon {
@@ -451,18 +454,22 @@ footer a i {
 }
 .container__index .function {
   padding: 25px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 0 0;
   background-color: #fff;
 }
 @media screen and (min-width: 521px) and (max-width: 700px) {
   .container__index .function {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .container__index .function h2 {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__index .function h2 {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 701px) {
   .container__index .function h2 {
@@ -473,7 +480,20 @@ footer a i {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__index .function ul {
+    align-items: center;
+  }
+}
 @media screen and (min-width: 701px) {
+  .container__index .function ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
   .container__index .function ul {
     display: flex;
     flex-direction: row;
@@ -564,6 +584,13 @@ footer a i {
     justify-content: space-evenly;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  .container__index .restaurant__position--figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .container__index .restaurant__card {
   position: relative;
   background-color: #fff;
@@ -577,15 +604,27 @@ footer a i {
 .container__index .restaurant__card:hover {
   transform: scale(1.05);
 }
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__index .restaurant__card {
+    width: 390px;
+  }
+}
 @media screen and (min-width: 701px) {
   .container__index .restaurant__card {
-    width: 49%;
+    width: 46%;
   }
 }
 @media screen and (min-width: 1024px) {
   .container__index .restaurant__card {
-    width: 24%;
-    max-width: 300px;
+    width: 23%;
+    max-width: 390px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  .container__index .restaurant__card {
+    width: 45%;
+    max-width: 390px;
+    margin: 2%;
   }
 }
 .container__index .restaurant__card span {
