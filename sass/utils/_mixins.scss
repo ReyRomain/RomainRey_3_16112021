@@ -24,6 +24,12 @@
     }
 }
 
+@mixin desktop-XL {
+    @media screen and (min-width: 2200px) {
+        @content;
+    }
+}
+
 /*** Mixin responsive spécial pour les restaurant__card ***/ 
 
 @mixin special-card {
@@ -36,12 +42,6 @@
 
 @mixin special-position {
     @media screen and (min-width: 701px) and (max-width: 839px) {
-        @content;
-    }
-}
-
-@mixin desktop-XL {
-    @media screen and (min-width: 2200px) {
         @content;
     }
 }
