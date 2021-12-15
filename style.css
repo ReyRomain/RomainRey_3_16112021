@@ -393,6 +393,7 @@ footer a i {
     opacity: 0;
     flex: 0;
     background-color: white;
+    visibility: hidden;
   }
 }
 @keyframes rotate-icon {
