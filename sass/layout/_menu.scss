@@ -15,6 +15,10 @@
         position: relative;
         bottom: 25px;
 
+        @include special-position {
+            margin: 0 15%;
+        }
+
         @include tablette-L {
             margin: 0 20%;
         }
@@ -56,6 +60,13 @@
             border-bottom: 2px solid #99e2d0;
             width: 40px;
             font-weight: normal;
+
+            @include desktop {
+                text-align: center;
+                width: 100%;
+                animation-delay: 0.8s;
+                font-family: 'Shrikhand', 'Roboto', sans-serif;
+            }
         }
 
         @include desktop {

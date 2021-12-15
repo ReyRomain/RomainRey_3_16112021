@@ -127,9 +127,8 @@
     }
 
     .menu__choice--icon {
-        /*display: none;*/
         flex: 0;
-        width: 8%;
+        width: 1%;
         height: 100%;
         border-radius: 0 20px 20px 0;
         animation: exit-icon 0.5s ease-in-out both;
@@ -228,6 +227,7 @@
 
     h2 {
         animation: apparition-right 2.5s linear both;
+        animation-delay: 1s;
     }
 }
 

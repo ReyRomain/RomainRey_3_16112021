@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*** Responsive - MediaQueries ***/
 /*** Mixin responsive spécial pour les restaurant__card ***/
+/*** Mixin responsive spécial pour la marge de la position ***/
 /*** Les couleurs du site ***/
 html,
 body,
@@ -143,6 +144,11 @@ footer a i {
   position: relative;
   bottom: 25px;
 }
+@media screen and (min-width: 701px) and (max-width: 839px) {
+  .container__menu .position {
+    margin: 0 15%;
+  }
+}
 @media screen and (min-width: 840px) and (max-width: 1023px) {
   .container__menu .position {
     margin: 0 20%;
@@ -180,6 +186,14 @@ footer a i {
   border-bottom: 2px solid #99e2d0;
   width: 40px;
   font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  .container__menu .menu h2 {
+    text-align: center;
+    width: 100%;
+    animation-delay: 0.8s;
+    font-family: "Shrikhand", "Roboto", sans-serif;
+  }
 }
 @media screen and (min-width: 1024px) {
   .container__menu .menu__group {
@@ -323,9 +337,8 @@ footer a i {
   width: 20%;
 }
 .menu__choice .menu__choice--icon {
-  /*display: none;*/
   flex: 0;
-  width: 8%;
+  width: 1%;
   height: 100%;
   border-radius: 0 20px 20px 0;
   animation: exit-icon 0.5s ease-in-out both;
@@ -400,6 +413,7 @@ footer a i {
 }
 .menu h2 {
   animation: apparition-right 2.5s linear both;
+  animation-delay: 1s;
 }
 
 @keyframes apparition {

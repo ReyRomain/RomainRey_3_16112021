@@ -28,7 +28,15 @@
 
 @mixin special-card {
     @media screen and (min-width: 1024px) and (max-width: 1250px) {
-        @content
+        @content;
+    }
+}
+
+/*** Mixin responsive spécial pour la marge de la position ***/
+
+@mixin special-position {
+    @media screen and (min-width: 701px) and (max-width: 839px) {
+        @content;
     }
 }
 
