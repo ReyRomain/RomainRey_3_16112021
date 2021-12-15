@@ -96,36 +96,51 @@
 
     .menu__choice--title {
         flex: 3;
-        padding: 15px;
+        padding: 0 0 0 10px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         width: 50%;
+        font-size: 1em;
+
+        h3 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     .menu__choice--price {
-        flex: 0.5;
+        flex: 0;
         display: flex;
         font-weight: bold;
-        padding: 31px 20px 20px 10px;
+        padding: 31px 10px 10px 5px;
         width: 20%;
     }
 
     .menu__choice--icon {
-        display: none;
+        /*display: none;*/
         flex: 0;
-        width: 30%;
+        width: 8%;
         height: 100%;
+        border-radius: 0 20px 20px 0;
         animation: exit-icon 0.5s ease-in-out both;
 
         i {
             display: flex;
             justify-content: center;
             align-items: center;
-            color: whitesmoke;
+            color: white;
             font-size: 28px;
-
-            animation: rotate-icon 0.5s ease-in-out both;
+            padding: 21px;
         }
     }
 
@@ -138,6 +153,17 @@
             border-radius: 0 15px 15px 0;
 
             animation: enter-icon 0.5s ease-in-out both;
+        }
+        
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            padding: 21px;
+
+            animation: rotate-icon 0.5s ease-in-out both;
         }
     }
 }
@@ -163,11 +189,13 @@
 @keyframes exit-icon {
     
     0% {
+        opacity: 1;
         flex: 1;
         background-color: $color-tertiary;
     }
 
     100% {
+        opacity: 0;
         flex: 0;
         background-color: white;
     }
