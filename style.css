@@ -200,6 +200,7 @@ footer a i {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 .container__menu .menu__choice {
