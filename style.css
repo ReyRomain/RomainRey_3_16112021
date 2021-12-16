@@ -180,6 +180,11 @@ footer a i {
 .container__menu .menu__title .icon-heart {
   font-size: 25px;
 }
+@media screen and (min-width: 1024px) {
+  .container__menu .menu__title {
+    flex-direction: column;
+  }
+}
 .container__menu .menu h2 {
   padding-bottom: 5px;
   margin-bottom: 10px;

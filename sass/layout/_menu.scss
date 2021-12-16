@@ -52,6 +52,10 @@
             .icon-heart {
                 font-size: 25px;
             }
+
+            @include desktop {
+                flex-direction: column;
+            }
         }
 
         h2 {
