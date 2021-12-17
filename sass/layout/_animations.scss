@@ -29,15 +29,20 @@
 
         i {
             margin: 5px 10px;
+            animation: rotate-icon 1s ease-in-out both infinite;
         }
     }
 }
 
 @keyframes loader {
     0% {
-        background-color: $color-primary;
+        background-color: black;
         opacity: 1;
         transform: scale(1);
+    }
+
+    24% {
+        background-color: $color-primary;
     }
 
     25% {

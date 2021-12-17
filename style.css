@@ -264,13 +264,17 @@ footer a i {
 }
 .load__flex-direction i {
   margin: 5px 10px;
+  animation: rotate-icon 1s ease-in-out both infinite;
 }
 
 @keyframes loader {
   0% {
-    background-color: #9356DC;
+    background-color: black;
     opacity: 1;
     transform: scale(1);
+  }
+  24% {
+    background-color: #9356DC;
   }
   25% {
     background-color: linear-gradient(#9356DC, #FF79DA);
