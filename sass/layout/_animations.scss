@@ -46,7 +46,7 @@
     }
 
     25% {
-        background-color: linear-gradient($color-primary, $color-secondary);
+        -webkit-linear-gradient: linear-gradient($color-primary, $color-secondary);
         opacity: 1;
     }
 
@@ -56,7 +56,7 @@
     }
 
     75% {
-        background-color: linear-gradient($color-secondary, $color-tertiary);
+        -webkit-linear-gradient: linear-gradient($color-secondary, $color-tertiary);
         /*opacity: 0.75;*/
     }
 
