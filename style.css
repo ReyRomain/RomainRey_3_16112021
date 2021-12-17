@@ -76,10 +76,12 @@ button {
   box-shadow: #bbbaba 0 5px 10px;
   transform: scale(1);
   transition: transform 400ms;
+  cursor: pointer;
 }
 button:hover {
   transform: scale(1.15);
   opacity: 0.95;
+  box-shadow: black 0 5px 25px;
 }
 
 header {
