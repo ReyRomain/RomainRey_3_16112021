@@ -362,7 +362,7 @@ footer a i {
   align-items: center;
   color: white;
   font-size: 28px;
-  padding: 21px;
+  padding: 21px 0;
 }
 .menu__choice:hover .menu__choice--icon {
   display: flex;
