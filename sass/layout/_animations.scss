@@ -181,6 +181,8 @@
     }
 }
 
+/* Keyframes d'entrer de check-circle avec le :hover */
+
 @keyframes enter-icon {
     
     0% {
@@ -204,6 +206,8 @@
     }
 }
 
+/* Keyframes de sortie de check-circle */
+
 @keyframes exit-icon {
     
     0% {
@@ -219,6 +223,8 @@
         visibility: hidden;
     }
 }
+
+/* Keyframes de la rotation de l'icone dans les menus aussi dans le loader */
 
 @keyframes rotate-icon {
 
@@ -236,19 +242,30 @@
 /*** L'animation d'apparition ***/
 
 .menu {
-    .menu__title {
+
+    &__title {
         animation: apparition-left 1.5s linear both;
         
     }
 
-    .menu__choice {
+    &__choice {
         animation: apparition 1.5s linear both;   
+    }
+
+    &__choice:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    &__choice:nth-child(3) {
+        animation-delay: 0.4s;
     }
 
     h2 {
         animation: apparition-right 2.5s linear both;
     }
 }
+
+/* Keyframes de l'apparition des menus */
 
 @keyframes apparition {
     from {
@@ -262,6 +279,8 @@
     }
 }
 
+/* Keyframes du nom du restaurant */
+
 @keyframes apparition-left {
     from {
         transform: translateX(-100%);
@@ -273,6 +292,8 @@
         opacity: 1;
     }
 }
+
+/* Keyframes des Entrées Plats Desserts */
 
 @keyframes apparition-right {
     from {

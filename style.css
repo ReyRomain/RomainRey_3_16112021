@@ -388,6 +388,7 @@ footer a i {
   animation: rotate-icon 0.5s ease-in-out both;
 }
 
+/* Keyframes d'entrer de check-circle avec le :hover */
 @keyframes enter-icon {
   0% {
     flex: 0;
@@ -406,6 +407,7 @@ footer a i {
     background-color: #99E2D0;
   }
 }
+/* Keyframes de sortie de check-circle */
 @keyframes exit-icon {
   0% {
     opacity: 1;
@@ -419,6 +421,7 @@ footer a i {
     visibility: hidden;
   }
 }
+/* Keyframes de la rotation de l'icone dans les menus aussi dans le loader */
 @keyframes rotate-icon {
   0% {
     transform: rotate(20deg);
@@ -429,16 +432,23 @@ footer a i {
 }
 /*** Fin de l'animation check-circle ***/
 /*** L'animation d'apparition ***/
-.menu .menu__title {
+.menu__title {
   animation: apparition-left 1.5s linear both;
 }
-.menu .menu__choice {
+.menu__choice {
   animation: apparition 1.5s linear both;
+}
+.menu__choice:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu__choice:nth-child(3) {
+  animation-delay: 0.4s;
 }
 .menu h2 {
   animation: apparition-right 2.5s linear both;
 }
 
+/* Keyframes de l'apparition des menus */
 @keyframes apparition {
   from {
     transform: translateY(-100%);
@@ -449,6 +459,7 @@ footer a i {
     opacity: 1;
   }
 }
+/* Keyframes du nom du restaurant */
 @keyframes apparition-left {
   from {
     transform: translateX(-100%);
@@ -459,6 +470,7 @@ footer a i {
     opacity: 1;
   }
 }
+/* Keyframes des Entrées Plats Desserts */
 @keyframes apparition-right {
   from {
     transform: translateX(-400px);
