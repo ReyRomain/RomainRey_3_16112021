@@ -258,6 +258,13 @@ footer a i {
   color: whitesmoke;
   text-shadow: black 0 5px 10px;
 }
+.load__flex-direction {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.load__flex-direction i {
+  margin: 5px 10px;
+}
 
 @keyframes loader {
   0% {
