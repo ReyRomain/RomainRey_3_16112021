@@ -151,6 +151,11 @@ footer a i {
     margin: 0 15%;
   }
 }
+@media screen and (min-width: 521px) and (max-width: 700px) {
+  .container__menu .position {
+    margin: 0 8%;
+  }
+}
 @media screen and (min-width: 840px) and (max-width: 1023px) {
   .container__menu .position {
     margin: 0 20%;
