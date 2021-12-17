@@ -105,6 +105,10 @@
             border-radius: 20px;
             cursor: pointer;
 
+            &:hover {
+                box-shadow: black 0 5px 25px;
+            }
+
             @include tablette {
                 margin: 10px;
                 max-width: 285px;
@@ -199,6 +203,7 @@
             
             &:hover {
                 transform: scale(1.05);
+                box-shadow: black 0 5px 25px;
             }
 
             @include phone-L {

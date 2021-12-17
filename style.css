@@ -573,6 +573,9 @@ footer a i {
   border-radius: 20px;
   cursor: pointer;
 }
+.container__index .function li:hover {
+  box-shadow: black 0 5px 25px;
+}
 @media screen and (min-width: 701px) {
   .container__index .function li {
     margin: 10px;
@@ -664,6 +667,7 @@ footer a i {
 }
 .container__index .restaurant__card:hover {
   transform: scale(1.05);
+  box-shadow: black 0 5px 25px;
 }
 @media screen and (min-width: 521px) and (max-width: 700px) {
   .container__index .restaurant__card {
