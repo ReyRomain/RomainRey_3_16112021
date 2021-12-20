@@ -52,13 +52,17 @@
             align-items: center;
             padding-bottom: 25px;
             font-family: "Shrikhand";
+
+            @include desktop {
+                justify-content: center;
+            }
     
             .icon-heart {
                 font-size: 25px;
-            }
 
-            @include desktop {
-                flex-direction: column;
+                @include desktop {
+                    margin-left: 20px;
+                }
             }
         }
 
